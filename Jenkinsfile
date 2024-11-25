@@ -38,7 +38,7 @@ pipeline {
             }
         }
         stage("06.SCP to Docker Server")
-        '''{
+        {
             steps{
                 echo "SCP To Docker Server"
                  script {
@@ -53,7 +53,7 @@ pipeline {
                      }
                  }
             }    
-        }'''
+        }
     }
 }
 
