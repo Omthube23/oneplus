@@ -31,7 +31,7 @@ pipeline {
             steps {
                 echo "Verifying Deployment"
                  script {
-                     def nexusURL = "http://172.30.32.1:8081/repository/shubham/com/msoffice/msexcel/0.0.1/msexcel-0.0.1-SNAPSHOT.jar"
+                     def nexusURL = "http://172.30.32.1:8081/repository/Oneplus_app/com/mobile/oneplus/0.0.1/oneplus-0.0.1-SNAPSHOT.jar"
                      def response = httpRequest(url: nexusURL, validResponseCodes: '200')
                      echo "Deployment verification response: ${response.content}"
                  }
